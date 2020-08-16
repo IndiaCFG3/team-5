@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import SignIn from './components/SignIn.js';
+import ForgetPassword from './components/ForgetPassword.js';
 import './App.css';
 
 /*
@@ -14,7 +15,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Route path="/" component={SignIn}/>
+        <Route exact path="/" component={SignIn}/>
+        <Route exact path="/forget" component={ForgetPassword}/>
       </div>
     </Router>
   );
