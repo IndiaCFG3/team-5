@@ -1,5 +1,4 @@
 import React from 'react';
-import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
@@ -9,7 +8,6 @@ import Link from '@material-ui/core/Link';
 import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
-import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -18,7 +16,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        SightandLife
+        CARPE
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -31,10 +29,10 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh',
   },
   image: {
-    backgroundImage: 'url(https://sightandlife.org/wp-content/uploads/2017/06/sightandlife_home_header.jpg)',
+    backgroundImage: 'url(https://secureservercdn.net/104.238.71.109/00p.8e2.myftpupload.com/wp-content/uploads/2020/04/KV-looking-into-camera.jpeg)',
     backgroundRepeat: 'no-repeat',
     backgroundColor:
-      theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
+    theme.palette.type === 'light' ? theme.palette.grey[50] : theme.palette.grey[900],
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   },
@@ -55,6 +53,9 @@ const useStyles = makeStyles((theme) => ({
   submit: {
     margin: theme.spacing(3, 0, 2),
   },
+  logo: {
+    alignItems: 'center'
+}
 }));
 
 export default function SignIn() {
@@ -66,9 +67,9 @@ export default function SignIn() {
       <Grid item xs={false} sm={4} md={7} className={classes.image} />
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
-          <Avatar className={classes.avatar}>
-            <LockOutlinedIcon />
-          </Avatar>
+            <Grid container className={classes.logo}>
+              <img alt="CARPE" src={process.env.PUBLIC_URL+'logo.png'}/>
+            </Grid>
           <Typography component="h1" variant="h5">
             Sign in
           </Typography>
