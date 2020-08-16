@@ -25,21 +25,21 @@ function App() {
         {/* Dashboard -> Select Data Analysis Page based upon Project Name */}
         {/* Data Analysis Component : Display data in some good Format : Graphs or Heatmaps */}
         {/* Form filling page for Field Workers */}
-
+        <button ><a href="dashboard2.html">Navigate to dashboard</a></button>
 
 
         {/* <Dashboard /> */}
 
       </div>
 
-      <Router>
+      {/* <Router>
         <div className="App">
           <Route exact path="/" component={SignIn} />
           <Route exact path="/forget" component={ForgetPassword} />
         </div>
-      </Router>
+      </Router> */}
 
-    </div>
+    </div >
 
   );
 }
