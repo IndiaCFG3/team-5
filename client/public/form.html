@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta characterset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<form action="action.php" method="post" enctype="multipart/form-data" name="myform">
+<link rel='stylesheet' href='style.css'>
+
+<div class="jumbotron text-center">
+    <h1>Hello, team member!</h1>
+    <p>Please fill all the values</p>
+    
+</div>
+<div container >
+<table border="0" align="center">
+<tbody>
+
+<br>
+<tr>
+<td><label for="name">Please enter the Project Name: </label></td>
+</tr>
+<tr>
+    <td><input id="name" maxlength="50" name="name" type="text" size="32" required></td>
+</tr>
+
+
+
+<tr>
+<td><label for="user_id">Please enter your User ID: </label></td>
+</tr>
+<tr>
+<td><input id="user_id" maxlength="50" name="user_id" type="text" size="32" required></td>
+</tr>
+
+<tr>
+<td><label for="location">Please Enter the location: </label></td>
+</tr>
+<tr>
+<td><input id="location" maxlength="50" name="location" type="text" size="32" required /></td>
+</tr>
+
+<tr>
+    <td><label for="incomming">Please enter the weight of Incoming Garbage in kgs: </label></td>
+</tr>
+<tr>    <td><input id="incomming" maxlength="50" name="incomming" type="text" size="32" required /></td>
+</tr>
+
+<tr>
+    <td><label for="outgoing">Please enter the weight of Outgoing Garbage in kgs: </label></td>
+</tr>
+<tr>    <td><input id="outgoing" maxlength="50" name="outgoing" type="text" size="32" required /></td>
+</tr>
+
+<tr>
+<td><label for="date">Please enter date: </label></td>
+</tr>
+<tr><td><input id="date" maxlength="50" name="date" type="date" size="32" required></td>
+</tr>
+
+<tr>
+    <td><label for="houses">Please enter number of houses visited: </label></td>
+</tr>
+<tr>    <td><input id="houses" maxlength="50" name="houses" type="text" size="32" required></td>
+</tr>
+
+<tr>
+    <td><label for="seghouses">Please enter number of houses that segregated waste: </label></td>
+</tr>
+<tr>    <td><input id="seghouses" maxlength="50" name="seghouses" type="text" size="32" required /></td>
+</tr>
+
+<tr>
+    <td><label for="nonseg">Please enter number of houses that didn't segregate waste: </label></td>
+</tr>
+<tr>    <td><input id="nonseg" maxlength="50" name="nonseg" type="text" size="32" required /></td>
+</tr>
+
+
+<tr>
+<td><label for="type_of_garbage">Type of Garbage: </label></td>
+<td>
+  <select name="type_of_garbage" required>
+    <option value="paper">Paper</option>
+    <option value="glass">Glass</option>
+    <option value="metal">Metal</option>
+    <option value="plastic">Plastic</option>
+    <option value="liquid">Liquid</option>
+  </select>
+<td>
+</tr>
+
+<tr>
+    <td><label for="hazard">Was anything hazardous? </label></td>
+    <td>
+        <select name="hazard" required>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+    </td>
+</tr>
+
+<tr>
+  <table align="center"><tr>
+  <td align="center"><input class="btn btn-primary" type="submit" value="Submit">
+  </td>
+  </tr></table>
+ 
+</tr>
+
+</tbody>
+</table>       
+</div> 
+</form>
+</body>
+</html>
